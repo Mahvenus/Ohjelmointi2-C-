@@ -1,0 +1,47 @@
+class IntLista{
+
+
+  // ominaisuus/muuttujat, isolla kirjaimella
+  public int Count {get; private set;} = 0;
+
+  // tietorakenne, array
+  public int[] luvut = new int[9];  
+
+  // konstruktori, EI TÄHÄN TARVETTA MÄÄRITTÄÄ
+  public IntLista() {}
+
+  // metodi/toiminnallisuus/funktio, julkisia, isolla kirjaimella
+  public void Add (int luku){
+    luvut.Add(luku);
+  }
+
+  public bool Remove (int luku)
+    for (int i = 0; i < luvut; i++)
+    {
+      {
+
+      }
+      return true;
+    }
+
+    return false;
+  }
+
+
+  public void Clear (){
+    luvut.Clear();
+  }
+
+  public  bool Contains (int luku){
+    for (int i = 0; i < luvut; i++)
+    {
+      {
+
+      }
+      return true;
+    }
+
+    return false;
+  }
+
+} 
