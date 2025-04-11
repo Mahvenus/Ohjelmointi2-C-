@@ -1,0 +1,24 @@
+(int Len, List<string> Most) ProcessDictionary(Dictionary<string, int>)
+{
+    int Len = 0;
+    List<string> Most = new List<string>();
+
+
+    // jos avaimen arvot on 0, tulostaa tyhjää
+
+    // Len = summa 
+
+    // Most = arvo mitä on eniten
+
+    return (Len, Most);
+
+}
+
+var dict = new Dictionary<string, int>
+{
+    ["a"] = 2,
+    ["b"] = 3,
+    ["c"] = 3
+};
+
+ProcessDictionary(dict);
