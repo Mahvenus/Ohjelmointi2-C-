@@ -1,0 +1,47 @@
+class IntStack
+{
+    // ominaisuus
+    public int Count { get { return data.Count; } }
+    
+    // tietorakenne
+    private List<int> data = new List<int>();
+
+    // konstruktori
+    public IntStack() {}
+
+    // metodi
+    public void Push(int item)
+    {
+        data.Add(item);
+    }
+
+    public int Pop()
+    {
+        if (Count == 0)
+        {
+            throw new InvalidOperationException("Stack empty");
+        }
+        int item = data.Last();
+        data.RemoveAt(Count - 1);
+        return item;
+    }
+    public int Peek()
+    {
+        if (Count == 0)
+        {
+            throw new InvalidOperationException("Stack empty");
+        }
+        return data.Last();
+    }
+
+    public void Clear()
+    {
+        data.Clear();
+    }
+
+    public bool Contains(int item)
+    {
+        return data.Contains(item);
+    }
+
+}
