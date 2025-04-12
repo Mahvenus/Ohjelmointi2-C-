@@ -60,3 +60,42 @@ class StringQueue
         return QUEUE EMPTY; 
     }
 }
+
+//muokattu vol2
+class StringQueue
+{
+    // ominaisuus
+    public int Count{get; private set;}
+    // public int Count => data.Count;
+
+    // tietorakenne, lista
+    private List<string> data = new List<string>();
+
+    // konstruktori, ei määritellä
+    public StringQueue() {}
+
+    // metodit, julkisia
+    public void Enqueue(string arvo)
+    {
+        data.Add(arvo);
+    }
+
+    public string Dequeue()
+    {
+        if (data.Count == 0){
+            return "QUEUE EMPTY";
+        }
+        string arvo = data.First(); 
+        data.RemoveAt(0);
+        return arvo; 
+    }
+
+    public string Peek()
+    {
+        if (data.Count == 0){
+            return "QUEUE EMPTY";
+        }
+        string arvo = data.First(); 
+        return arvo; 
+    }
+}
